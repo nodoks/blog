@@ -15,12 +15,12 @@ copyright = "@ 2025 Nodoks"
 [params.author]
   name = "Raul Romitan"
   # image = "img/author.jpg"
-  headline = "I'm only human"
-  bio = "A little bit about you"
+  # headline = "I'm only human"
+  bio = "Full Stack Developer"
   links = [
-    { email = "mailto:hello@your_domain.com" },
-    { github = "https://github.com/username" },
-    { linkedin = "https://linkedin.com/in/username" },
+    { email = "mailto:raul.romitan@nodoks.com" },
+    { github = "https://github.com/luaRRaul" },
+    { linkedin = "https://linkedin.com/in/raul-romitan-28656416a" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },
