@@ -43,37 +43,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-      - name: Verify submodules
-        run: |
-          echo "Checking submodule status:"
-          git submodule status
-          echo "Checking if theme directory exists:"
-          ls -la themes/
-          echo "Checking theme files:"
-          ls -la themes/congo/layouts/_partials/functions/ || echo "Theme functions directory not found"
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Install theme dependencies and build CSS
-        run: |
-          cd themes/congo
-          npm ci
-          npm run build
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          echo "Hugo version:"
-          hugo version
-          echo "Checking theme configuration:"
-          hugo config | grep -A 5 -B 5 theme || echo "No theme config found"
-          echo "Building site:"
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
