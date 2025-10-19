@@ -73,9 +73,9 @@ fingerprintAlgorithm = "sha256"
   # site = "ABC12345"
 
 [plausibleAnalytics]
-  domain = "nodoks.com"
-  event = ""
-  script = "https://analytics.nodoks.com/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"
+  # domain = "nodoks.com"
+  # event = ""
+  # script = "https://analytics.nodoks.com/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"
 
 #[umamiAnalytics]
 #  site = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
