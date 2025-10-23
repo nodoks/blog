@@ -1,5 +1,64 @@
-<section class=" h-full flex flex-col items-center justify-center align-middle max-w-3xl">
-  <h1 class="text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100">Real problems. Simple answers.</h1>
-  <p class="mt-4 text-lg text-neutral-600 dark:text-neutral-300">We make software for the people. No jargon, no clutter — just clear, useful tools.</p>
-  <!-- <a class="inline-block !rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700" href="/projects/">See what we build</a> -->
+<!-- Full-screen hero section -->
+<section
+  id="hero-section"
+  class="h-screen flex flex-col items-center justify-center text-center px-4"
+>
+  <h1
+    class="text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100"
+  >
+    Real problems. Simple answers.
+  </h1>
+  <p class="mt-4 text-lg text-neutral-600 dark:text-neutral-300">
+    We make software for the people.<br class="sm:hidden" />
+    No jargon, no clutter — just clear, useful tools.
+  </p>
 </section>
+
+<!-- Content section -->
+<section class="px-4 py-16 mx-auto max-w-3xl">
+  <div class="prose prose-neutral dark:prose-invert max-w-none">
+    <h2>About</h2>
+     <p style="text-align: justify;">
+       Nodoks creates apps and systems that do what they're supposed to do —
+       nothing more, nothing less. We build using modern technologies, focusing
+       on good design, stable tech, and making things easy to use. Every project
+       we deliver aims to be intuitive, reliable, and maintainable.
+     </p>
+
+    <h2>What we do</h2>
+    <ul>
+      <li>Build web and mobile apps</li>
+      <li>Create tools that connect people, data, and ideas</li>
+      <li>Host everything in the cloud</li>
+    </ul>
+
+    <h2>Learn from our experience</h2>
+     <p style="text-align: justify;">
+       Most of what we share here is from real projects. Things that worked,
+       things that didn't, and the simple answers I found along the way. Check
+       out our blog for practical fixes and patterns you can use in your own
+       work.
+     </p>
+  </div>
+
+  <div class="mt-8 text-end">
+    <a
+      class="inline-block !rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+      href="/posts/"
+      >Read the blog</a
+    >
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+    const heroSection = document.getElementById("hero-section");
+
+    if (header && heroSection) {
+      const headerHeight = header.offsetHeight;
+      const heroHeight = `calc(${headerHeight}px + 28px)`;
+      heroSection.style.paddingBottom = heroHeight;
+    }
+  });
+</script>
