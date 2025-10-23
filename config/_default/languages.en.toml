@@ -8,6 +8,21 @@ copyright = "@ 2025 Nodoks"
 
 [params]
   dateFormat = "2 January 2006"
+  description = "Nodoks builds clear, reliable software. Real problems. Simple answers."
+  keywords = [
+    "Angular",
+    "Ionic",
+    "Ruby on Rails",
+    "Rails",
+    "Web development",
+    "Mobile app development",
+    "Full-stack developer",
+    "Freelance software developer",
+    "Software consulting",
+    "Cloud hosting",
+    "SaaS",
+    "Nodoks"
+  ]
 
   # mainSections = ["section1", "section2"]
   # description = "My awesome website"
